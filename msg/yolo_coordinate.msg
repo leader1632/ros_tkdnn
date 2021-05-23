@@ -1,14 +1,14 @@
 Header header
 string label
-uint8 x_center
-uint8 y_center
-uint8 w
-uint8 h
-uint8 xmin
-uint8 xmax
-uint8 ymin
-uint8 ymax
+uint32 x_center
+uint32 y_center
+uint32 w
+uint32 h
+uint32 xmin
+uint32 xmax
+uint32 ymin
+uint32 ymax
 
 float32 confidence
 
-uint8 size
+uint32 size

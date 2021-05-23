@@ -186,3 +186,7 @@ target_link_libraries(${PROJECT_NAME}
   tkDNN
   ${catkin_LIBRARIES}
 )
+
+catkin_install_python(PROGRAMS ros_src/depth_subscriber.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

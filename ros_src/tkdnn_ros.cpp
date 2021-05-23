@@ -41,7 +41,7 @@ public:
     ImageConverter()
     : it_(nh_)
     {
-        image_sub_ = it_.subscribe("/usb_cam/image_raw",1, &ImageConverter::imageCb,this);
+        image_sub_ = it_.subscribe("/camera/color/image_raw",10, &ImageConverter::imageCb,this);
 
     }
     void imageCb(const sensor_msgs::ImageConstPtr& msg){
